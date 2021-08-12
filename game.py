@@ -9,7 +9,10 @@ class Game:
 
 
     def run_game(self):
-        pass
+        self.welcome_message()
+        self.display_rules()
+        self.game_rounds()
+        
 
     def welcome_message(self):
         print('Welcome to Rock, Paper, Scissors, Lizard, Spock game!')
