@@ -2,7 +2,9 @@ from player import Player
 
 class Human(Player):
     def __init__(self):
+        self.set_name()
         super().__init__()
+        
 
     def set_name(self):
         self.name = input("what's your name? ")
