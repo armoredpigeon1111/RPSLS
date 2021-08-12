@@ -7,5 +7,5 @@ class Player:
         self.name = ''
         self.gesture_list = ['Rock', 'Paper', 'Scissors', 'Lizard', 'Spock']
 
-    def choose_gesture():
+    def choose_gesture(self):
         pass

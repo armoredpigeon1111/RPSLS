@@ -9,7 +9,7 @@ class Ai:
         self.name = 'Player 2'
 
     def chosen_gesture(self):
-        self.chosen_gesture = Random.randint(0, 4)
+        self.chosen_gesture = self.gesture_list[Random.randint(0, 4)]
 
     def set_score(self):
         self.score += 1
