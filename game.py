@@ -33,9 +33,9 @@ class Game:
     def game_rounds(self):
         while self.player_one.score < 2 and self.player_two.score < 2:
             p1_gesture = self.player_one.choose_gesture()
-            print(p1_gesture)
             p2_gesture = self.player_two.choose_gesture()
-            print(p2_gesture)
+            print(f'{self.player_one.name} chose {p1_gesture}.')
+            print(f'{self.player_two.name} chose {p2_gesture}.')
 
             self.choose_round_winner(p1_gesture, p2_gesture)
             
