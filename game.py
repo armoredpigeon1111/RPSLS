@@ -44,74 +44,44 @@ class Game:
         if p1_gesture == "Rock":
             if(p2_gesture == "Rock"):
                 print("tie")
-            elif(p2_gesture == "Paper"):
+            elif(p2_gesture == "Paper" or p2_gesture == "Spock"):
                 self.player_two.set_score()
                 print("Player 2 wins round")
-            elif(p2_gesture == "Scissors"):
+            elif(p2_gesture == "Scissors" or p2_gesture == "Lizard"):
                 self.player_one.set_score()
                 print("Player 1 wins round")
-            elif(p2_gesture == "Lizard"):
-                self.player_one.set_score()
-                print("Player 1 wins round")
-            elif(p2_gesture == "Spock"):
-                self.player_two.set_score()
-                print("Player 2 wins round")
         elif p1_gesture == "Paper":
-            if(p2_gesture == "Rock"):
+            if(p2_gesture == "Rock" or p2_gesture == "Spock"):
                 self.player_one.set_score()
                 print("Player 1 wins round")
             elif(p2_gesture == "Paper"):
                 print("tie")
-            elif(p2_gesture == "Scissors"):
+            elif(p2_gesture == "Scissors" or p2_gesture == "Lizard"):
                 self.player_two.set_score()
                 print("Player 2 wins round")
-            elif(p2_gesture == "Lizard"):
-                self.player_two.set_score()
-                print("Player 2 wins round")
-            elif(p2_gesture == "Spock"):
-                self.player_one.set_score
-                print("Player 1 wins round")
         elif p1_gesture == "Scissors":
-            if(p2_gesture == "Paper"):
+            if(p2_gesture == "Paper" or p2_gesture == "Lizard"):
                 self.player_one.set_score
                 print("Player 1 wins round")
-            elif(p2_gesture == "Rock"):
+            elif(p2_gesture == "Rock" or p2_gesture == "Spock"):
                 self.player_two.set_score()
                 print("Player 2 wins")
             elif(p2_gesture == "Scissors"):
                 print("tie")
-            elif(p2_gesture == "Lizard"):
-                self.player_one.set_score()
-                print("Player 1 wins round")
-            elif(p2_gesture == "Spock"):
-                self.player_two.set_score()
-                print("Player 2 wins round")
         elif p1_gesture == "Lizard":
-            if(p2_gesture == "Rock"):
+            if(p2_gesture == "Rock" or p2_gesture == "Scissors"):
                 self.player_two.set_score()
                 print("Player 2 wins round")
-            elif(p2_gesture == "Paper"):
+            elif(p2_gesture == "Paper" or p2_gesture == "Spock"):
                 self.player_one.set_score()
                 print("Player 1 wins round")
-            elif(p2_gesture == "Scissors"):
-                self.player_two.set_score()
-                print("Player 2 wins round")
             elif(p2_gesture == "Lizard"):
                 print("tie")
-            elif(p2_gesture == "Spock"):
-                self.player_one.set_score()
-                print("Player 1 wins round") 
         elif p1_gesture == "Spock":
-            if(p2_gesture == "Rock"):
+            if(p2_gesture == "Rock" or p2_gesture == "Scissors"):
                 self.player_one.set_score()
                 print("Player 1 wins round")
-            elif(p2_gesture == "Paper"):
-                self.player_two.set_score()
-                print("Player 2 wins round")
-            elif(p2_gesture == "Scissors"):
-                self.player_one.set_score()
-                print("Player 1 wins round")
-            elif(p2_gesture == "Lizard"):
+            elif(p2_gesture == "Paper" or p2_gesture == "Lizard"):
                 self.player_two.set_score()
                 print("Player 2 wins round")
             elif(p2_gesture == "Spock"):
