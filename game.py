@@ -13,6 +13,7 @@ class Game:
         self.display_rules()
         self.game_type()
         self.game_rounds()
+        self.get_game_winner()
         
         
 
@@ -117,3 +118,8 @@ class Game:
                 print("tie")
 
     
+    def get_game_winner(self):
+        if(self.player_one.score == 2):
+            print("Player 1 Wins!")
+        else:
+            print("Player 2 Wins!")
