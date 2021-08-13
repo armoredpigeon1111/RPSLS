@@ -24,7 +24,7 @@ class Game:
         print('\nEach player choses one gesture from the list\n Rock crushes Scissors\n Scissors cuts Paper\n Paper covers Rock\n Rock crushes Lizard\n Lizard poisons Spock\n Spock smashes Scissors\n Scissors decapitates Lizard\n Lizard eats Paper\n Paper disproves Spock\n Spock vaporizes Rock')
 
     def game_type(self):
-        user_choice = int(input('\nSPlay a single player game or two player game? type "1" for single and "2" for multi: '))
+        user_choice = int(input('\nPlay a single player game or two player game? type "1" for single and "2" for multi: '))
         if user_choice == 1:
             self.player_two = Ai()
         else:
