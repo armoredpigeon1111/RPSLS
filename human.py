@@ -10,7 +10,14 @@ class Human(Player):
         self.name = input("what's your name? ")
 
     def choose_gesture(self):
-        user_choice = int(input('\nChoose your gesture: Type "1" for Rock, "2" for Paper, "3" for Scissors, "4" for Lizard or "5" for Spock ')) -1
+        validation = False
+        while validation is False:
+            user_choice = int(input('\nChoose your gesture: Type "1" for Rock, "2" for Paper, "3" for Scissors, "4" for Lizard or "5" for Spock: ')) -1
+            if user_choice == 0 or user_choice == 1 or user_choice == 2 or user_choice == 3 or user_choice == 4:
+                validation = True
+            else:
+                print('Please choose a number between 1 - 5')
+
         return self.gesture_list[user_choice]
 
     def set_score(self):
