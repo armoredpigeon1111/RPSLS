@@ -12,7 +12,7 @@ class Human(Player):
     def choose_gesture(self):
         validation = False
         while validation is False:
-            user_choice = int(input('\nChoose your gesture: Type "1" for Rock, "2" for Paper, "3" for Scissors, "4" for Lizard or "5" for Spock: ')) -1
+            user_choice = int(input(f'\n{self.name} Choose your gesture: Type "1" for Rock, "2" for Paper, "3" for Scissors, "4" for Lizard or "5" for Spock: ')) -1
             if user_choice == 0 or user_choice == 1 or user_choice == 2 or user_choice == 3 or user_choice == 4:
                 validation = True
             else:
