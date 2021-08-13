@@ -23,7 +23,7 @@ class Game:
         print('Each player choses one gesture from the list\n Rock crushes Scissors\n Scissors cuts Paper\n Paper covers Rock\n Rock crushes Lizard\n Lizard poisons Spock\n Spock smashes Scissors\n Scissors decapitates Lizard\n Lizard eats Paper\n Paper disproves Spock\n Spock vaporizes Rock')
 
     def game_type(self):
-        user_choice = int(input('Play a single player game or two player game? type "1" for single and "2" for multi '))
+        user_choice = int(input('Play a single player game or two player game? type "1" for single and "2" for multi: '))
         if user_choice == 1:
             self.player_two = Ai()
         else:
@@ -31,8 +31,10 @@ class Game:
 
     def game_rounds(self):
         while self.player_one.score < 2 and self.player_two.score < 2:
-            p1_gesture = self.player_one.chosen_gesture()
-            p2_gesture = self.player_two.chosen_gesture()
+            p1_gesture = self.player_one.choose_gesture()
+            print(p1_gesture)
+            p2_gesture = self.player_two.choose_gesture()
+            print(p2_gesture)
 
             self.choose_round_winner(p1_gesture, p2_gesture)
             
